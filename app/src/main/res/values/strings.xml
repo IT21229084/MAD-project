@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Bike_Tuk_Rental</string>
+    <string name="to_date">To Date</string>
+    <string name="from_date">From Date</string>
+    <string name="selected_date">Selected Date:</string>
+    <string name="selected_date2">Selected Date:</string>
+    <string name="book_now">Book Now</string>
+    <string name="selected_date1">selected_date</string>
+    <string name="selected_time">Selected time</string>
+    <string name="button_text_style">bold</string>
+    <string name="pickup_time">Pickup Time</string>
+    <string name="dropoff_time">Drop off Time</string>
+    <string name="total_cost">Total Cost : </string>
+    <string name="edit">Edit</string>
+    <string name="booking_summary">Booking Summary</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+</resources>

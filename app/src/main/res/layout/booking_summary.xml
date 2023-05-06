@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText"
+    android:background="@drawable/cropped_scooter">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/table_marginstart"
+        android:layout_marginTop="@dimen/table_margintop"
+        android:layout_marginEnd="@dimen/table_marginend"
+        android:layout_marginBottom="@dimen/table_marginbottom"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_green"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tb_booking_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="50sp"
+                android:paddingLeft="30sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="25sp"
+                android:paddingRight="30sp"
+                android:paddingBottom="25sp"
+                android:text="Booking ID"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tb_bookid_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="50sp"
+                android:paddingLeft="10sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="25sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="25sp"
+                android:text="#123"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#21C392"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tb_from_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="50sp"
+                android:paddingLeft="30sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="25sp"
+                android:paddingRight="30sp"
+                android:paddingBottom="25sp"
+                android:text="From Date"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tb_from_date_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="50sp"
+                android:paddingLeft="10sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="25sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="25sp"
+                android:text="03-03-2023"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#21C392"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tb_todate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="50sp"
+                android:paddingLeft="30sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="25sp"
+                android:paddingRight="30sp"
+                android:paddingBottom="25sp"
+                android:text="To Date"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tb_todate_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="50sp"
+                android:paddingLeft="10sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="25sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="25sp"
+                android:text="18-03-2023"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#21C392"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tb_pick_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="50sp"
+                android:paddingLeft="30sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="25sp"
+                android:paddingRight="30sp"
+                android:paddingBottom="25sp"
+                android:text="Pickup Time"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tb_pick_time_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="50sp"
+                android:paddingLeft="10sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="25sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="25sp"
+                android:text="09:30"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#21C392"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tb_drop_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="50sp"
+                android:paddingLeft="30sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="25sp"
+                android:paddingRight="30sp"
+                android:paddingBottom="25sp"
+                android:text="Drop Off Date"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tb_drop_date_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="50sp"
+                android:paddingLeft="10sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="25sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="25sp"
+                android:text="18-03-2023"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#21C392"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tb_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="50sp"
+                android:paddingLeft="30sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="25sp"
+                android:paddingRight="30sp"
+                android:paddingBottom="25sp"
+                android:text="Amount"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tb_cost_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="50sp"
+                android:paddingLeft="10sp"
+                android:paddingTop="20sp"
+                android:paddingEnd="25sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="25sp"
+                android:text="15000.00"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/book_summary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/bs_tv_marginstart"
+        android:layout_marginTop="@dimen/bs_tv_margintop"
+        android:layout_marginEnd="@dimen/bs_tv_marginend"
+        android:padding="10sp"
+        android:text="@string/booking_summary"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="@dimen/bs_t_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tb_button_edit"
+        android:layout_width="@dimen/bs_bt_width"
+        android:layout_height="@dimen/bs_bt_height"
+        android:layout_marginTop="@dimen/bs_bt_margintop"
+        android:background="@drawable/round_button_green"
+        android:text="@string/edit"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tb_button_confirm"
+        android:layout_width="@dimen/bs_bt_width"
+        android:layout_height="@dimen/bs_bt_height"
+        android:layout_marginTop="@dimen/bs_bt_margintop"
+        android:background="@drawable/tv_border_orange"
+        android:text="@string/confirm"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tb_button_cancel"
+        android:layout_width="@dimen/bs_bt_width"
+        android:layout_height="@dimen/bs_bt_height"
+        android:layout_marginTop="@dimen/bs_bt_margintop"
+        android:text="@string/cancel"
+        android:background="@drawable/round_button_red"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

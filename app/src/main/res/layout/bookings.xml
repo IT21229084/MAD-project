@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText"
+    android:background="@drawable/cropped_scooter">
+
+    <Button
+        android:id="@+id/date_picker_button1"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/round_button_green"
+        android:text="@string/from_date"
+        android:textSize="@dimen/button_text_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/date_text_view1"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/selected_date1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toEndOf="@+id/date_picker_button1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <Button
+        android:id="@+id/date_picker_button2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_button_green"
+        android:text="@string/to_date"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_picker_button1" />
+
+    <TextView
+        android:id="@+id/date_text_view2"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/selected_date2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toEndOf="@+id/date_picker_button2"
+        app:layout_constraintTop_toBottomOf="@+id/date_text_view1"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <Button
+        android:id="@+id/button_book_now"
+        android:layout_width="@dimen/bt_booknow_width"
+        android:layout_height="@dimen/bt_booknow_height"
+        android:layout_marginTop="568dp"
+        android:background="@drawable/round_button_green"
+        android:text="@string/book_now"
+        android:textColor="@color/black"
+        android:textSize="@dimen/bt_booknow_t_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/add_booking_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Add your booking"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/time_picker_button"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_button_white"
+        android:text="@string/pickup_time"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_picker_button2" />
+
+    <TextView
+        android:id="@+id/time_text_view"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/selected_time"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toEndOf="@+id/time_picker_button"
+        app:layout_constraintTop_toBottomOf="@+id/date_text_view2"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <Button
+        android:id="@+id/time_picker_button2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_button_white"
+        android:text="@string/dropoff_time"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_picker_button" />
+
+    <TextView
+        android:id="@+id/time_text_view2"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/selected_time"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toEndOf="@+id/time_picker_button2"
+        app:layout_constraintTop_toBottomOf="@+id/time_text_view"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="@string/total_cost"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_picker_button2"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <TextView
+        android:id="@+id/cost_view"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="00.00"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toEndOf="@+id/cost"
+        app:layout_constraintTop_toBottomOf="@+id/time_text_view2"
+        app:layout_constraintVertical_bias="0.264" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

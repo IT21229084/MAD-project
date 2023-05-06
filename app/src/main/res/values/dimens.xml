@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="button_width">150dp</dimen>
+    <dimen name="button_height">50dp</dimen>
+    <dimen name="button_text_size">14sp</dimen>
+    <dimen name="bt_booknow_width">267dp</dimen>
+    <dimen name="bt_booknow_height">50dp</dimen>
+    <dimen name="bt_booknow_t_size">24sp</dimen>
+    <dimen name="bs_tv_margintop">44dp</dimen>
+    <dimen name="bs_tv_marginstart">30dp</dimen>
+    <dimen name="bs_tv_marginend">30dp</dimen>
+    <dimen name="bs_t_size">24sp</dimen>
+    <dimen name="bs_bt_width">105dp</dimen>
+    <dimen name="bs_bt_height">45dp</dimen>
+    <dimen name="bs_bt_margintop">552dp</dimen>
+    <dimen name="table_marginstart">30dp</dimen>
+    <dimen name="table_margintop">120dp</dimen>
+    <dimen name="table_marginend">30dp</dimen>
+    <dimen name="table_marginbottom">130dp</dimen>
+
+
+</resources>
