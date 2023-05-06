@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".Activities.LogIn" >
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/_e280dca_e287_455b_9433_bc52b9cb0cfa" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/logHeader"
+        android:textAlignment="center"
+        android:textColor="@color/logHeaderTxt"
+        android:textSize="27dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/logEmail"
+        android:layout_width="@dimen/logEditTxtWidth"
+        android:layout_height="@dimen/logEditTxtHeight"
+        android:layout_marginLeft="@dimen/logEditTxtMarginLeft"
+        android:layout_marginTop="@dimen/logEditTxtPaddingLeft"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="@string/logEmail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="40px"
+        android:textSize="@dimen/logEditTxtSize" />
+
+    <EditText
+        android:id="@+id/logpwd"
+        android:layout_width="318dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="120px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="@string/logPwd"
+        android:inputType="textPassword"
+        android:paddingLeft="40px"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="@dimen/logBtnWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/logBtnMarginLeft"
+        android:layout_marginTop="@dimen/logBtnMarginTopSignIn"
+        android:backgroundTint="#21C392"
+        android:text="@string/logSignTxt" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/logMarginTopTxtOr"
+        android:text="@string/logOr"
+        android:textAlignment="center"
+        android:textColor="#9C9696"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:id="@+id/regbtn"
+        android:layout_width="@dimen/logBtnWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/logBtnMarginLeft"
+        android:layout_marginTop="@dimen/logBtnMarginTopSignUp"
+        android:backgroundTint="#FBFAFA"
+        android:text="@string/logSignUpTxt"
+        android:textColor="@color/logSignInBtn"
+        android:textStyle="bold" />
+
+</LinearLayout>

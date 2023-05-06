@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //Log in page
+    <dimen name="logImageHeight">233dp</dimen>
+
+    <dimen name="logEditTxtWidth">318dp</dimen>
+    <dimen name="logEditTxtHeight">48dp</dimen>
+    <dimen name="logEditTxtMarginLeft">120px</dimen>
+    <dimen name="logEditTxtPaddingLeft">40px</dimen>
+    <dimen name="logEditTxtSize">16sp</dimen>
+    <dimen name="logBtnWidth">306dp</dimen>
+    <dimen name="logBtnMarginLeft">50dp</dimen>
+    <dimen name="logBtnMarginTopSignIn">20dp</dimen>
+    <dimen name="logBtnMarginTopSignUp">8dp</dimen>
+    <dimen name="logMarginTopTxtOr">40px</dimen>
+    <dimen name="logTxtSize">16sp</dimen>
+
+    //Register page
+    <dimen name="regMarginTop">20dp</dimen>
+    <dimen name="regPaddingRight">15dp</dimen>
+    <dimen name="regPaddingTxtSize">34sp</dimen>
+    <dimen name="regEditTxtMarginTop">20px</dimen>
+    <dimen name="regEditTxtMarginLeft">80px</dimen>
+    <dimen name="regEditTxtMarginRight">80px</dimen>
+    <dimen name="regEditTxtMarginBottom">10px</dimen>
+    <dimen name="regEditMinHeight">40dp</dimen>
+    <dimen name="regEditTxtPaddingLeft">30px</dimen>
+    <dimen name="regEditTxtSize">14sp</dimen>
+    <dimen name="regBtnMarginLeft">78dp</dimen>
+    <dimen name="regBtnMarginTop">20dp</dimen>
+    <dimen name="regBtnTxtSize">18sp</dimen>
+    <dimen name="regBtnWidth">260dp</dimen>
+
+
+    //Profile
+    <dimen name="profileImageHeight">122dp</dimen>
+    <dimen name="profileMarginTop">30px</dimen>
+    <dimen name="profileNameMarginTop">10px</dimen>
+    <dimen name="profileNameMarginBottom">30px</dimen>
+    <dimen name="profileNameTxtSize">20sp</dimen>
+    <dimen name="profileAttMarginTop">40px</dimen>
+    <dimen name="profileAttTxtSize">18sp</dimen>
+    <dimen name="profileAttViewTxtSize">16sp</dimen>
+    <dimen name="profileBtnMarginLeft">70dp</dimen>
+    <dimen name="profileBtnHeight">278dp</dimen>
+    <dimen name="profileBtnMarginTop">10dp</dimen>
+    <dimen name="profileBtnTxtSize">19sp</dimen>
+
+    //Edit Profile
+    <dimen name="editprofileImageHeight">75dp</dimen>
+    <dimen name="editprofileMarginTop">20px</dimen>
+    <dimen name="profileEditImaMarginLeft">60dp</dimen>
+    <dimen name="editprofileAttMarginTop">10px</dimen>
+
+    <dimen name="editprofileAttTxtSize">18sp</dimen>
+    <dimen name="profileEditTxtSize">16sp</dimen>
+    <dimen name="profileEditTxtWidth">300dp</dimen>
+    <dimen name="profileEditTxtHeight">29dp</dimen>
+    <dimen name="profileEditTxtMarginLeft">60dp</dimen>
+
+    <dimen name="editprofileBtnMarginLeft">-30dp</dimen>
+    <dimen name="editprofileBtnWidth">308dp</dimen>
+    <dimen name="editprofileBtnMarginTop">10dp</dimen>
+
+
+
+
+</resources>

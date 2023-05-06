@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.EditBusineesProfile">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editprofileImageHeight"
+        android:layout_marginTop="@dimen/editprofileMarginTop"
+        app:srcCompat="@drawable/img" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/editprofileAttMarginTop"
+        android:paddingLeft="60dp"
+        android:text="Business Name"
+        android:textColor="@color/attributeColor"
+        android:textSize="@dimen/editprofileAttTxtSize"
+        app:fontFamily="sans-serif-medium" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="@dimen/profileEditTxtWidth"
+        android:layout_height="@dimen/profileEditTxtHeight"
+        android:layout_marginLeft="@dimen/profileEditTxtMarginLeft"
+        android:background="@drawable/editprofile"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="40dp"
+        android:text="@string/nameView"
+        android:textSize="@dimen/profileEditTxtSize"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/editprofileAttMarginTop"
+        android:paddingLeft="60dp"
+        android:text="@string/Email"
+        android:textColor="@color/attributeColor"
+        android:textSize="@dimen/editprofileAttTxtSize"
+        app:fontFamily="sans-serif-medium" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="@dimen/profileEditTxtWidth"
+        android:layout_height="@dimen/profileEditTxtHeight"
+        android:layout_marginLeft="@dimen/profileEditTxtMarginLeft"
+        android:background="@drawable/editprofile"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="40dp"
+        android:text="@string/emailView"
+        android:textSize="@dimen/profileEditTxtSize"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/editprofileAttMarginTop"
+        android:paddingLeft="60dp"
+        android:text="@string/MobileNo"
+        android:textColor="@color/attributeColor"
+        android:textSize="@dimen/editprofileAttTxtSize"
+        app:fontFamily="sans-serif-medium" />
+
+    <EditText
+        android:id="@+id/MobileNo"
+        android:layout_width="@dimen/profileEditTxtWidth"
+        android:layout_height="@dimen/profileEditTxtHeight"
+        android:layout_marginLeft="@dimen/profileEditTxtMarginLeft"
+        android:background="@drawable/editprofile"
+        android:ems="10"
+        android:inputType="phone"
+        android:paddingLeft="40dp"
+        android:text="@string/NoView"
+        android:textSize="@dimen/profileEditTxtSize"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/editprofileAttMarginTop"
+        android:paddingLeft="60dp"
+        android:text="Owner ID"
+        android:textColor="@color/attributeColor"
+        android:textSize="@dimen/editprofileAttTxtSize"
+        app:fontFamily="sans-serif-medium" />
+
+    <EditText
+        android:id="@+id/NIC"
+        android:layout_width="@dimen/profileEditTxtWidth"
+        android:layout_height="@dimen/profileEditTxtHeight"
+        android:layout_marginLeft="@dimen/profileEditTxtMarginLeft"
+        android:background="@drawable/editprofile"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingLeft="40dp"
+        android:text="@string/NicView"
+        android:textSize="@dimen/profileEditTxtSize"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/editprofileAttMarginTop"
+        android:paddingLeft="60dp"
+        android:text="@string/address"
+        android:textColor="@color/attributeColor"
+        android:textSize="@dimen/editprofileAttTxtSize"
+        app:fontFamily="sans-serif-medium" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="@dimen/profileEditTxtWidth"
+        android:layout_height="@dimen/profileEditTxtHeight"
+        android:layout_marginLeft="@dimen/profileEditTxtMarginLeft"
+        android:background="@drawable/editprofile"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:paddingLeft="40dp"
+        android:text="@string/addressView"
+        android:textSize="@dimen/profileEditTxtSize"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/editprofileAttMarginTop"
+        android:paddingLeft="60dp"
+        android:text="@string/pwd"
+        android:textColor="@color/attributeColor"
+        android:textSize="@dimen/editprofileAttTxtSize"
+        app:fontFamily="sans-serif-medium" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="@dimen/profileEditTxtWidth"
+        android:layout_height="@dimen/profileEditTxtHeight"
+        android:layout_marginLeft="@dimen/profileEditTxtMarginLeft"
+        android:background="@drawable/editprofile"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingLeft="40dp"
+        android:text="@string/pwdView"
+        android:textSize="@dimen/profileEditTxtSize"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/confirmbs"
+        android:layout_width="@dimen/editprofileBtnWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/profileBtnMarginLeft"
+        android:layout_marginTop="@dimen/profileBtnMarginTop"
+        android:backgroundTint="#21c392"
+        android:text="@string/btnUpdate"
+        android:textStyle="bold"
+        app:backgroundTint="@color/UpdateBtn" />
+
+    <Button
+        android:id="@+id/delbs"
+        android:layout_width="@dimen/editprofileBtnWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/profileBtnMarginLeft"
+        android:layout_marginTop="@dimen/profileBtnMarginTop"
+        android:backgroundTint="#FFFFFFFF"
+        android:text="@string/btnDelete"
+        android:textColor="@color/deleteBtnTxtColor"
+        android:textStyle="bold"
+        app:backgroundTint="@color/deleteBtnBackColor" />
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="30px"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView3"-->
+    <!--            android:layout_width="30dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_weight="5"-->
+    <!--            app:srcCompat="@drawable/icons8_home_page_60" />-->
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView7"-->
+    <!--            android:layout_width="30dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_weight="5"-->
+
+    <!--            app:srcCompat="@drawable/icons8_scooter_100" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView9"-->
+    <!--            android:layout_width="30dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_weight="5"-->
+
+    <!--            app:srcCompat="@drawable/icons8_add_67__1_" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView10"-->
+    <!--            android:layout_width="30dp"-->
+    <!--            android:layout_height="40dp"-->
+    <!--            android:layout_weight="5"-->
+
+    <!--            app:srcCompat="@drawable/icons8_life_cycle_100" />-->
+    <!--    </LinearLayout>-->
+
+
+</LinearLayout>

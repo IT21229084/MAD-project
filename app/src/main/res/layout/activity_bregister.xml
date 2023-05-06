@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bregisetr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.B_Register">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/regMarginTop"
+        android:paddingRight="@dimen/regPaddingRight"
+        android:text="@string/SignUp"
+        android:textAlignment="center"
+        android:textColor="@color/signUpColor"
+        android:textSize="@dimen/regPaddingTxtSize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="20px"
+        android:text="@string/subHeader"
+        android:textColor="@color/signUpSubHead"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/usernamebs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/regEditTxtMarginLeft"
+        android:layout_marginTop="@dimen/regEditTxtMarginTop"
+        android:layout_marginRight="@dimen/regEditTxtMarginRight"
+        android:layout_marginBottom="@dimen/regEditTxtMarginBottom"
+        android:background="@drawable/registeredit"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:minHeight="@dimen/regEditMinHeight"
+        android:paddingLeft="@dimen/regEditTxtPaddingLeft"
+        android:textColor="#A3A1A1"
+        android:textSize="@dimen/regEditTxtSize"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/emailbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/regEditTxtMarginLeft"
+        android:layout_marginTop="@dimen/regEditTxtMarginTop"
+        android:layout_marginRight="@dimen/regEditTxtMarginRight"
+        android:layout_marginBottom="@dimen/regEditTxtMarginBottom"
+        android:background="@drawable/registeredit"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:minHeight="@dimen/regEditMinHeight"
+        android:paddingLeft="@dimen/regEditTxtPaddingLeft"
+        android:textSize="@dimen/regEditTxtSize"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextPhonebs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/regEditTxtMarginLeft"
+        android:layout_marginTop="@dimen/regEditTxtMarginTop"
+        android:layout_marginRight="@dimen/regEditTxtMarginRight"
+        android:layout_marginBottom="@dimen/regEditTxtMarginBottom"
+        android:background="@drawable/registeredit"
+        android:ems="10"
+        android:hint="@string/mobileNo"
+        android:inputType="phone"
+        android:minHeight="@dimen/regEditMinHeight"
+        android:paddingLeft="@dimen/regEditTxtPaddingLeft"
+        android:textSize="@dimen/regEditTxtSize"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/addressbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/regEditTxtMarginLeft"
+        android:layout_marginTop="@dimen/regEditTxtMarginTop"
+        android:layout_marginRight="@dimen/regEditTxtMarginRight"
+        android:layout_marginBottom="@dimen/regEditTxtMarginBottom"
+        android:background="@drawable/registeredit"
+        android:ems="10"
+        android:hint="@string/address"
+        android:inputType="textPostalAddress"
+        android:minHeight="@dimen/regEditMinHeight"
+        android:paddingLeft="@dimen/regEditTxtPaddingLeft"
+        android:textSize="@dimen/regEditTxtSize"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/NICnobs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/regEditTxtMarginLeft"
+        android:layout_marginTop="@dimen/regEditTxtMarginTop"
+        android:layout_marginRight="@dimen/regEditTxtMarginRight"
+        android:layout_marginBottom="@dimen/regEditTxtMarginBottom"
+        android:background="@drawable/registeredit"
+        android:ems="10"
+        android:hint="@string/IDNumber"
+        android:inputType="number"
+        android:minHeight="@dimen/regEditMinHeight"
+        android:paddingLeft="@dimen/regEditTxtPaddingLeft"
+        android:textSize="@dimen/regEditTxtSize"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/pwdbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/regEditTxtMarginLeft"
+        android:layout_marginTop="@dimen/regEditTxtMarginTop"
+        android:layout_marginRight="@dimen/regEditTxtMarginRight"
+        android:layout_marginBottom="@dimen/regEditTxtMarginBottom"
+        android:background="@drawable/registeredit"
+        android:ems="10"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:minHeight="@dimen/regEditMinHeight"
+        android:paddingLeft="@dimen/regEditTxtPaddingLeft"
+        android:textSize="@dimen/regEditTxtSize"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/bregisterbtn"
+        android:layout_width="@dimen/regBtnWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/regBtnMarginLeft"
+        android:layout_marginTop="@dimen/regBtnMarginTop"
+        android:backgroundTint="#21C392"
+        android:text="@string/signUpTxt"
+        android:textSize="@dimen/regBtnTxtSize"
+        android:textStyle="bold"
+        app:backgroundTint="@color/signUpBtnColor" />
+</LinearLayout>

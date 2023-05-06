@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">User</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    //Log in page
+    <string name="logHeader">Welcome Back!</string>
+    <string name="logEmail">Email Address</string>
+    <string name="logPwd">Password</string>
+    <string name="logSignTxt">Sign in</string>
+    <string name="logOr">or</string>
+    <string name="logSignUpTxt">Sign Up</string>
+
+    //Register page
+    <!--    <string name="app_name">Registration Form</string>-->
+    <string name="SignUp">Sign Up</string>
+    <string name="subHeader">Register for our rental service here...</string>
+    <string name="username">User Name</string>
+    <string name="name">User Name</string>
+    <string name="email">Email Address</string>
+    <string name="mobileNo">Mobile Number</string>
+    <string name="Address">postalAddress</string>
+    <string name="address">Postal Address</string>
+    <string name="IDNumber">NIC No</string>
+    <string name="Password">Password</string>
+    <string name="confirmPwd">Re-Enter Password</string>
+    <string name="signUp">Register Now </string>
+    <string name="signUpTxt">Register Now</string>
+
+    //Profile
+    <!--    <string name="app_name">Profile</string>-->
+    <string name="userNanme">Malith Iroshan</string>
+    <!--    //<string name="email">Email Address</string>-->
+    <string name="emailView">malith@outlook.com</string>
+    <string name="MobileNo">Mobile Number</string>
+    <string name="MobileView">0779999999</string>
+    <string name="IdNo">NIC No</string>
+    <string name="NicView">20000183723</string>
+    <!--   // <string name="address">Postal Address</string>-->
+    <string name="addressView">Chilaw Road, Madampe</string>
+    <string name="pwd">Password</string>
+    <string name="pwdView">**************</string>
+    <string name="profileBtnBooking">My Booking</string>
+    <string name="profileEditBtn">Edit Profile</string>
+
+    //Edit Profile
+
+    <string name="eProfilename">User Name</string>
+    <string name="nameView">Malith Iroshan</string>
+    <string name="Email">Email Address</string>
+    <!--    <string name="emailView">malith@outlook.com</string>-->
+    <string name="eMobileNo">Mobile Number</string>
+    <string name="NoView">077999999</string>
+    <string name="EIDNumber">NIC No</string>
+    <!--    <string name="NicView">199952656</string>-->
+    <string name="Eaddress">Postal Address</string>
+    <!--    <string name="addressView">Chilaw Road,New Town,Madampe</string>-->
+    <string name="Epwd">Password</string>
+    <!--    <string name="pwdView">*************************</string>-->
+    <string name="btnUpdate">Update Details</string>
+    <string name="btnDelete">Delete Profile</string>
+
+
+</resources>
