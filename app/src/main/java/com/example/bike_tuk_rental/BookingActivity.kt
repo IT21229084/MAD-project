@@ -2,14 +2,15 @@ package com.example.bike_tuk_rental
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import java.text.SimpleDateFormat
 import java.util.*
 
-class MainActivity() : AppCompatActivity() {
+
+class BookingActivity : AppCompatActivity() {
 
     private lateinit var time_text_view: TextView
     private lateinit var time_picker_button: Button
