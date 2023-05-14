@@ -21,7 +21,7 @@
         android:text="@string/logHeader"
         android:textAlignment="center"
         android:textColor="@color/logHeaderTxt"
-        android:textSize="27dp"
+        android:textSize="34sp"
         android:textStyle="bold" />
 
     <EditText
@@ -80,7 +80,7 @@
         android:text="@string/logOr"
         android:textAlignment="center"
         android:textColor="#9C9696"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold"
 
         />

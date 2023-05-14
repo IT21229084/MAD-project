@@ -35,6 +35,7 @@ class LogIn : AppCompatActivity() {
             val email = binding.logEmail.text.toString()
             val pass = binding.logpwd.text.toString()
 
+            //check email and password field empty
             if(email.isEmpty()){
                 Toast.makeText(this,"Email field is Empty",Toast.LENGTH_LONG).show()
             }
@@ -53,7 +54,7 @@ class LogIn : AppCompatActivity() {
                         databaseReference.child(firebaseAuth.currentUser!!.uid).addValueEventListener(object : ValueEventListener {
 
                             override fun onDataChange(snapshot: DataSnapshot) {
-                                //retrieve values from the db and convert them to user data class
+
                                 var user = snapshot.getValue(UserModel::class.java)!!
 
                                 // Determine if the user is a customer or a business
