@@ -211,7 +211,7 @@
         android:layout_height="19dp"
         android:layout_marginTop="8dp"
         android:text="@string/ttlAmout_title"
-        android:textSize="16dp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -8,11 +8,12 @@
 
     <Button
         android:id="@+id/confirm_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
+        android:layout_width="148dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="@color/btnColor"
         android:text="Confirm"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,6 +29,18 @@
         android:hint="Amount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="196dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="88dp"
+        android:text="Enter amount"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
