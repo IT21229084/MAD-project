@@ -44,10 +44,10 @@ class MyApplication:Application() {
             Log.d(TAG, "deleteVehicle: Deleting")
 
             val progressDialog = ProgressDialog(context)
-//            progressDialog.setTitle("Please Wait")
-//            progressDialog.setMessage("Deleting ${vehicleName}")
-//            progressDialog.setCanceledOnTouchOutside(false)
-//            progressDialog.show()
+            progressDialog.setTitle("Please Wait")
+            progressDialog.setMessage("Deleting ${vehicleName}")
+            progressDialog.setCanceledOnTouchOutside(false)
+            progressDialog.show()
 
             val ref = FirebaseDatabase.getInstance().getReference("Vehicles")
             ref.child(vehicleID)
