@@ -72,6 +72,7 @@ class VehicleAddActivity : AppCompatActivity() {
         hashMap["vehicleType"] = vehicleType
         hashMap["shop"] = shop
 
+
         //add to DB
         val ref = FirebaseDatabase.getInstance().getReference("Vehicles")
         ref.child("$timestamp")
