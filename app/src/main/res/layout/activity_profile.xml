@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/profileImageHeight"
+        android:layout_height="63dp"
         android:layout_marginTop="@dimen/profileMarginTop"
 
         app:srcCompat="@drawable/img" />
@@ -27,11 +27,85 @@
         android:textColor="@color/userNameColor"
         android:textSize="@dimen/profileNameTxtSize" />
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="63dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/icons8_feedback_48" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="63dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.857"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:srcCompat="@drawable/icons8_car_rental_30" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="63dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:srcCompat="@drawable/icons8_cash_and_credit_card_48" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="FeedBack"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.094"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Payments"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.307"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="40dp"
+            android:text="Booking"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.616"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10px"
+        android:layout_marginTop="23px"
         android:paddingLeft="50px"
         android:text="@string/email"
         android:textColor="@color/attributeColor"
@@ -123,18 +197,6 @@
         android:textSize="@dimen/profileAttViewTxtSize" />
 
     <Button
-        android:id="@+id/mybooking"
-        android:layout_width="@dimen/profileBtnHeight"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/profileBtnMarginLeft"
-        android:layout_marginTop="@dimen/profileBtnMarginTop"
-        android:backgroundTint="#21C392"
-        android:text="@string/profileBtnBooking"
-        android:textSize="@dimen/profileBtnTxtSize"
-        android:textStyle="bold"
-        app:backgroundTint="@color/MyBookBtn" />
-
-    <Button
         android:id="@+id/Eprofile"
         android:layout_width="@dimen/profileBtnHeight"
         android:layout_height="wrap_content"
@@ -142,10 +204,23 @@
         android:layout_marginTop="@dimen/profileBtnMarginTop"
         android:backgroundTint="#FFFFFF"
         android:text="@string/profileEditBtn"
-        android:textColor="@color/editBtnTxtColor"
+        android:textColor="@color/MyBookBtn"
         android:textSize="@dimen/profileBtnTxtSize"
         android:textStyle="bold"
         app:backgroundTint="@color/editPBtnBackColor" />
+
+    <Button
+        android:id="@+id/logoutcus"
+        android:layout_width="@dimen/profileBtnHeight"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/profileBtnMarginLeft"
+        android:layout_marginTop="@dimen/profileBtnMarginTop"
+        android:text="Log Out"
+        android:textSize="@dimen/profileBtnTxtSize"
+        android:textStyle="bold"
+        android:textColor="#AA0303"
+        android:backgroundTint="#FFFFFF"
+        app:backgroundTint="@color/MyBookBtn" />
 
     <!--    <LinearLayout-->
     <!--        android:layout_width="match_parent"-->

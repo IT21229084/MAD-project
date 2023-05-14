@@ -32,13 +32,12 @@ class EditBusineesProfile : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
         var uid = auth.currentUser?.uid.toString()
-
-        ETUserName = findViewById(R.id.userNamebs)
-        ETEmail = findViewById(R.id.Emailbs)
+        ETUserName = findViewById(R.id.usernamebs)
+        ETEmail = findViewById(R.id.emailbs)
         ETMobileNo = findViewById(R.id.MobileNobs)
-        ETAddress = findViewById(R.id.addrbs)
+        ETAddress = findViewById(R.id.addressbs)
         ETNIC = findViewById(R.id.NICbs)
-        ETpassword = findViewById(R.id.passwdbs)
+        ETpassword = findViewById(R.id.passwordbs)
         editbtn = findViewById(R.id.confirmbs)
         btnDelete = findViewById(R.id.delbs)
 
@@ -57,19 +56,27 @@ class EditBusineesProfile : AppCompatActivity() {
         ETUserName.setText(userName)
         ETEmail.setText(email)
         ETMobileNo.setText(mobile)
-
         ETAddress.setText(address)
         ETNIC.setText(nic)
         ETpassword.setText(password)
 
-        btnupdate.setOnClickListener {
+        editbtn.setOnClickListener {
             var UserName = ETUserName.text.toString()
             var Email = ETEmail.text.toString()
             var MobileNo = ETMobileNo.text.toString()
-
             var address = ETAddress.text.toString()
             var nic = ETNIC.text.toString()
             var password = ETpassword.text.toString()
+
+            if (UserName.isEmpty()){
+                Toast.makeText(this,"Please fill Name", Toast.LENGTH_LONG).show()
+            }
+            if (Email.isEmpty()){
+                Toast.makeText(this,"Please fill Email", Toast.LENGTH_LONG).show()
+            }
+            if(MobileNo.isEmpty()){
+                Toast.makeText(this,"Please fill Contact No", Toast.LENGTH_LONG).show()
+            }
 
 
             if (UserName.isNotEmpty() && Email.isNotEmpty()  && MobileNo.isNotEmpty()) {
@@ -79,12 +86,9 @@ class EditBusineesProfile : AppCompatActivity() {
                 map["userName"] = UserName
                 map["email"] = Email
                 map["mobileNo"] = MobileNo
-
                 map["address"] = address
                 map["nic"] = nic
                 map["password"] = password
-
-
 
 
                 //update database from hashMap
@@ -97,41 +101,27 @@ class EditBusineesProfile : AppCompatActivity() {
                         Toast.makeText(this, it.exception?.message, Toast.LENGTH_SHORT).show()
                     }
                 }
-
-
-            } else {
-                if (UserName.isEmpty()){
-                    Toast.makeText(this,"Please fill Name", Toast.LENGTH_LONG).show()
-                }
-                if (Email.isEmpty()){
-                    Toast.makeText(this,"Please fill Email", Toast.LENGTH_LONG).show()
-                }
-                if(MobileNo.isEmpty()){
-                    Toast.makeText(this,"Please fill Contact No", Toast.LENGTH_LONG).show()
-                }
             }
         }
+
         btnDelete.setOnClickListener {
             Toast.makeText(this, "Account Deleted", Toast.LENGTH_SHORT).show()
             //delete account
             var currUser = auth.currentUser
-            currUser?.delete()
-                ?.addOnCompleteListener { task ->
+            currUser?.delete()?.addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         //delete user data entry from db
                         databaseReference.child(uid).removeValue().addOnCompleteListener {
-                            if( it.isSuccessful){
+                            if (it.isSuccessful) {
                                 Toast.makeText(this, "Account Deleted", Toast.LENGTH_SHORT).show()
-                                intent = Intent(applicationContext, Register::class.java)
+                                intent = Intent(applicationContext, LogIn::class.java)
                                 startActivity(intent)
-
                             }
                         }
                     } else {
                         Toast.makeText(this, "Failed to delete the account", Toast.LENGTH_SHORT).show()
                     }
-                }
-
+            }
         }
     }
 }

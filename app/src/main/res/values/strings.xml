@@ -19,7 +19,7 @@
 
     //Register page
     <!--    <string name="app_name">Registration Form</string>-->
-    <string name="SignUp">Sign Up</string>
+    <string name="SignUp">Customer Registration.</string>
     <string name="subHeader">Register for our rental service here...</string>
     <string name="username">User Name</string>
     <string name="name">User Name</string>
@@ -66,5 +66,41 @@
     <string name="btnUpdate">Update Details</string>
     <string name="btnDelete">Delete Profile</string>
 
+
+    <string name="regDir">Continues As..</string>
+    <string name="vshop">View Shop</string>
+
+
+    //Booking
+    <string name="to_date">To Date</string>
+    <string name="from_date">From Date</string>
+    <string name="selected_date">Selected Date:</string>
+    <string name="selected_date2">Selected Date:</string>
+    <string name="book_now">Book Now</string>
+    <string name="selected_date1">selected_date</string>
+    <string name="selected_time">Selected time</string>
+    <string name="button_text_style">bold</string>
+    <string name="pickup_time">Pickup Time</string>
+    <string name="dropoff_time">Drop off Time</string>
+    <string name="total_cost">Total Cost : </string>
+    <string name="edit">Edit</string>
+    <string name="booking_summary">Booking Summary</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+
+    //Payment
+    <string name="title_value">Payment Details</string>
+    <string name="mode_title">Select payment mode</string>
+    <string name="mode_titlecrddetaails">Card details</string>
+    <string name="Crddetailstitle">Card Details</string>
+    <string name="crd_number_value">Card number</string>
+    <string name="name_on_crd_value">Name on card</string>
+    <string name="ttlAmout_value">Rs. 6856</string>
+    <string name="btn_value_paynow">Pay Now</string>
+    <string name="ttlAmout_title">Total Amount</string>
+    <string name="savebtn_valluue">Save</string>
+    <string name="title_otp_value">Enter OTP</string>
+    <string name="cnfrm_btn_value">CONFIRM</string>
+    <string name="statname"><![CDATA[Bike & Tuk Rental]]></string>
 
 </resources>

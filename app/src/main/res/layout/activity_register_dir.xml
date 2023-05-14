@@ -8,25 +8,28 @@
 
     <Button
         android:id="@+id/cus"
-        android:layout_width="124dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="176dp"
-        android:text="Customer"
+        android:layout_width="228dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="164dp"
         android:backgroundTint="#21C392"
+        android:text="Customer"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/bus"
-        android:layout_width="124dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="176dp"
-        android:text="Business"
+        android:layout_width="228dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="80dp"
         android:backgroundTint="#21C392"
+        android:text="Business"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
-        app:layout_constraintStart_toEndOf="@+id/cus"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -34,12 +37,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:text="Select your path"
-        android:textColor="#73736F"
-        android:textSize="24sp"
+        android:text="@string/regDir"
+        android:textColor="#673AB7"
+        android:textSize="34sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintHorizontal_bias="0.594"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

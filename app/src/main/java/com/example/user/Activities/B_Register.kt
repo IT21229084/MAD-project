@@ -16,21 +16,28 @@ import com.google.firebase.ktx.Firebase
 
 class B_Register : AppCompatActivity() {
 
+    // Declare variables
     private lateinit var dbRef: DatabaseReference
     private lateinit var binding: ActivityBregisterBinding
     private lateinit var firebaseAuth: FirebaseAuth
+
+    // This method is called when the activity is created
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Inflate the layout for the activity
         binding = ActivityBregisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Get an instance of FirebaseAuth and FirebaseDatabase
         firebaseAuth = FirebaseAuth.getInstance()
         val auth = Firebase.auth
         dbRef = FirebaseDatabase.getInstance().getReference("user")
 
-
-
+        // Set an onclick listener for the register button
         binding.bregisterbtn.setOnClickListener {
+
+            // Get user inputs from the EditText views
             val userName = binding.usernamebs.text.toString()
             val Email = binding.emailbs.text.toString()
             val address = binding.addressbs.text.toString()
@@ -38,19 +45,30 @@ class B_Register : AppCompatActivity() {
             val Nic = binding.NICnobs.text.toString()
             val password = binding.pwdbs.text.toString()
 
+            // Check if all required fields are filled
             if (Email.isNotEmpty() && password.isNotEmpty()&&Nic.isNotEmpty() && Email.isNotEmpty()  && userMobile.isNotEmpty() && userName.isNotEmpty() && (userMobile.length==10)  && (password.length>5)) {
 
+                // Create user with email and password using FirebaseAuth
                 firebaseAuth.createUserWithEmailAndPassword(Email,password).addOnCompleteListener(this) {task->
 
+                    // If user creation is successful
                     if (task.isSuccessful) {
+
+                        // Show a success message
                         Toast.makeText(this,"SIGN UP SUCCESS", Toast.LENGTH_LONG).show()
+
+                        // Get the current user and their UID
                         val auth1=auth.currentUser
                         var userId=auth1?.uid
 
-                        val dataInsert=
-                            UserModel(userId,userName,Email,userMobile,address,Nic,password,"bs")
+                        // Create a UserModel object with user data
+                        val dataInsert= UserModel(userId,userName,Email,userMobile,address,Nic,password,"bs")
+
+                        // Add the user data to the Firebase Realtime Database
                         dbRef.child(userId!!).setValue(dataInsert).addOnSuccessListener {
                             Toast.makeText(this,"Created user", Toast.LENGTH_LONG).show()
+
+                            // Redirect the user to the login activity
                             intent = Intent(applicationContext, LogIn::class.java)
                             startActivity(intent)
                         }.addOnFailureListener {err->
@@ -58,12 +76,14 @@ class B_Register : AppCompatActivity() {
                         }
 
                     } else {
+                        // If user creation fails, show an error message
                         Toast.makeText(this, "Login fail", Toast.LENGTH_LONG).show()
                     }
 
                 }
 
             } else {
+                // If required fields are not filled, show appropriate error messages
                 if (Email.isEmpty()){
                     Toast.makeText(this,"Please fill Email", Toast.LENGTH_LONG).show()
                 }

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/regMarginTop"
         android:paddingRight="@dimen/regPaddingRight"
-        android:text="@string/SignUp"
+        android:text="Business Registration"
         android:textAlignment="center"
         android:textColor="@color/signUpColor"
         android:textSize="@dimen/regPaddingTxtSize"

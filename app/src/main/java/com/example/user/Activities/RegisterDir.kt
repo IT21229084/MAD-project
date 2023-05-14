@@ -6,7 +6,9 @@ import android.os.Bundle
 import android.widget.Button
 import com.example.user.R
 
+// Class definition for the activity to register either as a customer or a business
 class RegisterDir : AppCompatActivity() {
+    //Declare Variable
     private lateinit var cusbtn:Button
     private lateinit var bussBtn:Button
 
@@ -14,9 +16,11 @@ class RegisterDir : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_dir)
 
+        // Assign the buttons to their respective UI elements
         cusbtn = findViewById(R.id.cus)
         bussBtn = findViewById(R.id.bus)
 
+        // Set the onClickListeners for the buttons
         cusbtn.setOnClickListener {
             intent = Intent(applicationContext, Register::class.java)
             startActivity(intent)

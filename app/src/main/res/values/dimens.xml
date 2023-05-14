@@ -11,15 +11,15 @@
     <dimen name="logEditTxtSize">16sp</dimen>
     <dimen name="logBtnWidth">306dp</dimen>
     <dimen name="logBtnMarginLeft">50dp</dimen>
-    <dimen name="logBtnMarginTopSignIn">20dp</dimen>
-    <dimen name="logBtnMarginTopSignUp">8dp</dimen>
-    <dimen name="logMarginTopTxtOr">40px</dimen>
+    <dimen name="logBtnMarginTopSignIn">10dp</dimen>
+    <dimen name="logBtnMarginTopSignUp">5dp</dimen>
+    <dimen name="logMarginTopTxtOr">20px</dimen>
     <dimen name="logTxtSize">16sp</dimen>
 
     //Register page
     <dimen name="regMarginTop">20dp</dimen>
     <dimen name="regPaddingRight">15dp</dimen>
-    <dimen name="regPaddingTxtSize">34sp</dimen>
+    <dimen name="regPaddingTxtSize">27sp</dimen>
     <dimen name="regEditTxtMarginTop">20px</dimen>
     <dimen name="regEditTxtMarginLeft">80px</dimen>
     <dimen name="regEditTxtMarginRight">80px</dimen>
@@ -40,7 +40,7 @@
     <dimen name="profileNameMarginBottom">30px</dimen>
     <dimen name="profileNameTxtSize">20sp</dimen>
     <dimen name="profileAttMarginTop">40px</dimen>
-    <dimen name="profileAttTxtSize">18sp</dimen>
+    <dimen name="profileAttTxtSize">16sp</dimen>
     <dimen name="profileAttViewTxtSize">16sp</dimen>
     <dimen name="profileBtnMarginLeft">70dp</dimen>
     <dimen name="profileBtnHeight">278dp</dimen>
@@ -63,7 +63,25 @@
     <dimen name="editprofileBtnWidth">308dp</dimen>
     <dimen name="editprofileBtnMarginTop">10dp</dimen>
 
+//Booking
 
+    <dimen name="button_width">150dp</dimen>
+    <dimen name="button_height">50dp</dimen>
+    <dimen name="button_text_size">14sp</dimen>
+    <dimen name="bt_booknow_width">267dp</dimen>
+    <dimen name="bt_booknow_height">50dp</dimen>
+    <dimen name="bt_booknow_t_size">24sp</dimen>
+    <dimen name="bs_tv_margintop">44dp</dimen>
+    <dimen name="bs_tv_marginstart">30dp</dimen>
+    <dimen name="bs_tv_marginend">30dp</dimen>
+    <dimen name="bs_t_size">24sp</dimen>
+    <dimen name="bs_bt_width">105dp</dimen>
+    <dimen name="bs_bt_height">45dp</dimen>
+    <dimen name="bs_bt_margintop">552dp</dimen>
+    <dimen name="table_marginstart">30dp</dimen>
+    <dimen name="table_margintop">120dp</dimen>
+    <dimen name="table_marginend">30dp</dimen>
+    <dimen name="table_marginbottom">130dp</dimen>
 
 
 </resources>

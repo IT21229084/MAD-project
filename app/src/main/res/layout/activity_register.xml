@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/regMarginTop"
+        android:layout_marginBottom="35px"
         android:paddingRight="@dimen/regPaddingRight"
         android:text="@string/SignUp"
         android:textAlignment="center"

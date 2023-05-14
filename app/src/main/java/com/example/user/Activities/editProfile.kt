@@ -13,10 +13,9 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 class editProfile : AppCompatActivity() {
-
+    // declare the required variables and references
     private lateinit var auth: FirebaseAuth
     private lateinit var databaseReference: DatabaseReference
-
     private lateinit var ETUserName: EditText
     private lateinit var ETEmail: EditText
     private lateinit var ETMobileNo: EditText
@@ -33,9 +32,13 @@ class editProfile : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_profile)
 
+        // initialize Firebase Authentication instance
         auth = FirebaseAuth.getInstance()
+
+        // get the current user's UID
         var uid = auth.currentUser?.uid.toString()
 
+        // Assign the buttons to their respective UI elements
         ETUserName = findViewById(R.id.username)
         ETEmail = findViewById(R.id.email)
         ETMobileNo = findViewById(R.id.MobileNo)
@@ -61,20 +64,29 @@ class editProfile : AppCompatActivity() {
         ETUserName.setText(userName)
         ETEmail.setText(email)
         ETMobileNo.setText(mobile)
-
         ETAddress.setText(address)
         ETNIC.setText(nic)
         ETpassword.setText(password)
 
+        // function to run when Update button is clicked
         btnupdate.setOnClickListener {
             var UserName = ETUserName.text.toString()
             var Email = ETEmail.text.toString()
             var MobileNo = ETMobileNo.text.toString()
-
             var address = ETAddress.text.toString()
             var nic = ETNIC.text.toString()
             var password = ETpassword.text.toString()
 
+
+            if (UserName.isEmpty()){
+                Toast.makeText(this,"Please fill Name", Toast.LENGTH_LONG).show()
+            }
+            if (Email.isEmpty()){
+                Toast.makeText(this,"Please fill Email", Toast.LENGTH_LONG).show()
+            }
+            if(MobileNo.isEmpty()){
+                Toast.makeText(this,"Please fill Contact No", Toast.LENGTH_LONG).show()
+            }
 
             if (UserName.isNotEmpty() && Email.isNotEmpty()  && MobileNo.isNotEmpty()) {
 
@@ -83,12 +95,9 @@ class editProfile : AppCompatActivity() {
                 map["userName"] = UserName
                 map["email"] = Email
                 map["mobileNo"] = MobileNo
-
                 map["address"] = address
                 map["nic"] = nic
                 map["password"] = password
-
-
 
 
                 //update database from hashMap
@@ -101,42 +110,28 @@ class editProfile : AppCompatActivity() {
                         Toast.makeText(this, it.exception?.message, Toast.LENGTH_SHORT).show()
                     }
                 }
-
-
-            } else {
-                if (UserName.isEmpty()){
-                    Toast.makeText(this,"Please fill Name", Toast.LENGTH_LONG).show()
-                }
-                if (Email.isEmpty()){
-                    Toast.makeText(this,"Please fill Email", Toast.LENGTH_LONG).show()
-                }
-                if(MobileNo.isEmpty()){
-                    Toast.makeText(this,"Please fill Contact No", Toast.LENGTH_LONG).show()
-                }
             }
         }
+
+        // function to run when  Delete Account is clicked
         btnDelete.setOnClickListener {
             Toast.makeText(this, "Account Deleted", Toast.LENGTH_SHORT).show()
             //delete account
             var currUser = auth.currentUser
-            currUser?.delete()
-                ?.addOnCompleteListener { task ->
+            currUser?.delete()?.addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         //delete user data entry from db
                         databaseReference.child(uid).removeValue().addOnCompleteListener {
                             if( it.isSuccessful){
                                 Toast.makeText(this, "Account Deleted", Toast.LENGTH_SHORT).show()
-                                intent = Intent(applicationContext, Register::class.java)
+                                intent = Intent(applicationContext, LogIn::class.java)
                                 startActivity(intent)
-
                             }
                         }
                     } else {
                         Toast.makeText(this, "Failed to delete the account", Toast.LENGTH_SHORT).show()
                     }
                 }
-
         }
-
     }
 }
