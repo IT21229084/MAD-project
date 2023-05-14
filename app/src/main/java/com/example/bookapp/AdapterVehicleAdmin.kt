@@ -22,6 +22,7 @@ class AdapterVehicleAdmin: RecyclerView.Adapter<AdapterVehicleAdmin.HolderVehicl
 
     private lateinit var binding: RowVehicleBinding
 
+    //Constructor
     constructor(context: Context, vehicleAdminArrayList: ArrayList<ModelVehicleAdmin>) : super() {
         this.context = context
         this.vehicleAdminArrayList = vehicleAdminArrayList
@@ -34,6 +35,7 @@ class AdapterVehicleAdmin: RecyclerView.Adapter<AdapterVehicleAdmin.HolderVehicl
         return HolderVehicleAdmin(binding.root)
     }
 
+    //Bind values
     override fun onBindViewHolder(holder: HolderVehicleAdmin, position: Int) {
         //get
         val model = vehicleAdminArrayList[position]

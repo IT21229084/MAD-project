@@ -46,9 +46,11 @@ class HomeActivity : AppCompatActivity() {
 
     }
 
+    //load all shops
     private fun loadShops() {
         shopArrayList = ArrayList()
 
+        //get from firebase
         val ref = FirebaseDatabase.getInstance().getReference("Shops")
         ref.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {

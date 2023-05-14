@@ -14,6 +14,7 @@ class FilterShop: Filter {
         this.adapterShop = adapterShop
     }
 
+    //filtering function
     override fun performFiltering(constraint: CharSequence?): FilterResults {
         var constraint = constraint
         var results = FilterResults()

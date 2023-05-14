@@ -38,6 +38,7 @@ class MyApplication:Application() {
                 })
         }
 
+        //delete vehicle
         fun deleteVehicle(context: Context, vehicleID: String, vehicleName: String){
             val TAG = "DELETE_VEHICLE_TAG"
 
@@ -49,6 +50,7 @@ class MyApplication:Application() {
             progressDialog.setCanceledOnTouchOutside(false)
             progressDialog.show()
 
+            //delete from firebase
             val ref = FirebaseDatabase.getInstance().getReference("Vehicles")
             ref.child(vehicleID)
                 .removeValue()

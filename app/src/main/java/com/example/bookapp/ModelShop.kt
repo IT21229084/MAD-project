@@ -10,6 +10,7 @@ class ModelShop {
 
     constructor()
 
+    //constructor
     constructor(
         shopID: Int,
         shopName: String,
