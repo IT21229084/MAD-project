@@ -45,6 +45,26 @@ class B_Register : AppCompatActivity() {
             val Nic = binding.NICnobs.text.toString()
             val password = binding.pwdbs.text.toString()
 
+            // If required fields are not filled, show appropriate error messages
+            if (Email.isEmpty()){
+                Toast.makeText(this,"Please fill Email", Toast.LENGTH_LONG).show()
+            }
+            if (password.isEmpty()){
+                Toast.makeText(this,"Please fill password", Toast.LENGTH_LONG).show()
+            }
+            if(Email.isEmpty()){
+                Toast.makeText(this,"Please fill Email", Toast.LENGTH_LONG).show()
+            }
+            if(userMobile.isEmpty()){
+                Toast.makeText(this,"Please fill Mobile number", Toast.LENGTH_LONG).show()
+            }
+            if((userMobile.length>10) && (userMobile.length<10)){
+                Toast.makeText(this,"Please enter valid mobile number", Toast.LENGTH_LONG).show()
+            }
+            if( password.length<6){
+                Toast.makeText(this,"password length max for 6", Toast.LENGTH_LONG).show()
+            }
+
             // Check if all required fields are filled
             if (Email.isNotEmpty() && password.isNotEmpty()&&Nic.isNotEmpty() && Email.isNotEmpty()  && userMobile.isNotEmpty() && userName.isNotEmpty() && (userMobile.length==10)  && (password.length>5)) {
 
@@ -82,27 +102,10 @@ class B_Register : AppCompatActivity() {
 
                 }
 
-            } else {
-                // If required fields are not filled, show appropriate error messages
-                if (Email.isEmpty()){
-                    Toast.makeText(this,"Please fill Email", Toast.LENGTH_LONG).show()
-                }
-                if (password.isEmpty()){
-                    Toast.makeText(this,"Please fill password", Toast.LENGTH_LONG).show()
-                }
-                if(Email.isEmpty()){
-                    Toast.makeText(this,"Please fill Email", Toast.LENGTH_LONG).show()
-                }
-                if(userMobile.isEmpty()){
-                    Toast.makeText(this,"Please fill Mobile number", Toast.LENGTH_LONG).show()
-                }
-                if((userMobile.length>10) && (userMobile.length<10)){
-                    Toast.makeText(this,"Please enter valid mobile number", Toast.LENGTH_LONG).show()
-                }
-                if( password.length<6){
-                    Toast.makeText(this,"password length max for 6", Toast.LENGTH_LONG).show()
-                }
             }
+
+
+
 
 
         }

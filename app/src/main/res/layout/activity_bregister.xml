@@ -28,7 +28,7 @@
         android:layout_marginTop="10px"
         android:layout_marginBottom="20px"
         android:text="@string/subHeader"
-        android:textColor="@color/signUpSubHead"
+        android:textColor="@color/accentYel"
         android:textSize="16sp"
         android:textStyle="bold|italic" />
 

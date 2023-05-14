@@ -62,6 +62,7 @@ class BusinessProfile : AppCompatActivity() {
                 startActivity(it)
             }
         }
+        // Set an OnClickListener for the edit profile button to start the Login activity
         binding.logoutbs.setOnClickListener {
             Firebase.auth.signOut()
 
