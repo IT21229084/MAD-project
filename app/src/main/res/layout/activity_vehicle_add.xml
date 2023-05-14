@@ -168,7 +168,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/teal_700"
             android:minHeight="50dp"
-            android:text="+ Submit"
+            android:text="Submit Vehicle"
             android:textAllCaps="false"
             android:textColor="@color/white" />
     </LinearLayout>

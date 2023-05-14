@@ -55,7 +55,7 @@
             android:ellipsize="end"
             android:layout_toEndOf="@id/vehicleRl"
             android:maxLines="1"
-            android:text="Count"/>
+            android:text="Available Count"/>
 
 
     </RelativeLayout>
