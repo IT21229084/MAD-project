@@ -12,7 +12,7 @@
         android:layout_height="106dp"
         android:layout_marginStart="104dp"
         android:layout_marginTop="164dp"
-        android:backgroundTint="#21C392"
+        android:backgroundTint="#3F51B5"
         android:text="Customer"
         android:textSize="20sp"
         android:textStyle="bold"
